@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Chat App
+This is a frontend chat application built using React.js. The application allows a dummy user to manage conversations, send and receive messages, and search through contacts.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+- **Load Dummy Data**: Loads conversations and contacts from a local JSON file.
+- **Search**: Allows users to search conversations by contact name.
+- **Conversations List**: Displays all conversations with contact names and the last message.
+- **Create New Conversation**: Opens a modal to start a new conversation with a contact.
+- **Chat Window**: Displays the selected conversation and allows sending messages.
+- **Error Handling**: Displays appropriate alerts for errors and success.
+- **React Router**: Uses React Router for navigation.
+- **React Hooks**: Uses React hooks for state management.
+- **Data Persistence (Bonus)**: Keeps conversations and messages intact after page refresh.
 
-## Available Scripts
 
-In the project directory, you can run:
+Installation
+To run this application locally, follow these steps:
 
-### `npm start`
+Clone this repository to your local machine.
+Navigate to the project directory.
+Install dependencies by running npm install.
+Start the development server with npm start.
+Open your browser and navigate to http://localhost:3000 to view the app.
+Usage
+Once the application is running, you will see a list of existing conversations on the sidebar. Clicking on a conversation will display the chat history in the main chat window. You can also start a new conversation by clicking the "New Conversation" button on the sidebar and selecting a contact.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Folder Structure
+public/: Contains the public assets and HTML template.
+src/: Contains the source code for the application.
+components/: Contains React components used in the application.
+pages/: Contains React components representing different pages/routes of the application.
+data/: Contains dummy data used for testing.
+App.js: Main component that sets up the application routes.
+index.js: Entry point of the application.
+index.css: Global styles for the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. ChatWindow
+Purpose: The ChatWindow component displays the chat history for a selected conversation and allows the user to send messages.
+Functionality:
+Displays messages in a conversation thread.
+Provides an input field for typing and sending new messages.
+Sends messages to the conversation thread when the user clicks the "Send" button.
 
-### `npm test`
+2. Conversation
+Purpose: The Conversation component represents a single conversation in the sidebar.
+Functionality:
+Displays the name of the contact associated with the conversation.
+Shows the latest message in the conversation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. NewConversationModal
+Purpose: The NewConversationModal component allows the user to start a new conversation by selecting a contact from a modal.
+Functionality:
+Displays a list of contacts.
+Allows the user to select a contact to start a conversation with.
+Closes the modal when the user selects a contact or clicks the "Close" button.
 
-### `npm run build`
+4. SearchBar
+Purpose: The SearchBar component provides a search input for filtering contacts in the sidebar.
+Functionality:
+Allows the user to search for contacts by typing in the input field.
+Filters the list of contacts based on the search term entered by the user.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Sidebar
+Purpose: The Sidebar component displays a list of conversations and provides options for starting new conversations.
+Functionality:
+Displays a list of conversations based on the user's contacts.
+Allows the user to start a new conversation by clicking the "New Conversation" button.
+Filters conversations based on the search term entered in the SearchBar component.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. Home (Page)
+Purpose: The Home page component serves as the main entry point of the application, rendering the Sidebar and ChatWindow components.
+Functionality:
+Manages state for conversations and selected conversation.
+Passes props to Sidebar and ChatWindow components.
+Handles starting new conversations and selecting existing conversations.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+7. App
+Purpose: The App component sets up the application routes using React Router.
+Functionality:
+Defines routes for different pages of the application.
+Renders the Home page component.
 
-### `npm run eject`
+8. Index Files (index.js, index.css)
+Purpose: The index files serve as entry points for rendering the application and providing global styles.
+Functionality:
+Renders the root component of the application (App) into the HTML root element.
+Includes global CSS styles for the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.

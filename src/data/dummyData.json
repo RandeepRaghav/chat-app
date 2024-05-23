@@ -1,0 +1,70 @@
+{
+  "contacts": [
+    { "id": 1, "name": "Alice" },
+    { "id": 2, "name": "Bob" },
+    { "id": 3, "name": "Charlie" },
+    { "id": 4, "name": "David" },
+    { "id": 5, "name": "Eve" },
+    { "id": 6, "name": "Frank" },
+    { "id": 7, "name": "Grace" },
+    { "id": 8, "name": "Hannah" }
+  ],
+  "conversations": [
+    {
+      "contactId": 1,
+      "messages": [
+        { "sender": "me", "text": "Hello Alice!", "timestamp": "2024-05-24T12:34:56Z" },
+        { "sender": "Alice", "text": "Hi there!", "timestamp": "2024-05-24T12:35:56Z" }
+      ]
+    },
+    {
+      "contactId": 2,
+      "messages": [
+        { "sender": "me", "text": "Hey Bob, how are you?", "timestamp": "2024-05-24T13:00:00Z" },
+        { "sender": "Bob", "text": "I'm good, thanks!", "timestamp": "2024-05-24T13:05:00Z" }
+      ]
+    },
+    {
+      "contactId": 3,
+      "messages": [
+        { "sender": "me", "text": "Hi Charlie!", "timestamp": "2024-05-24T14:10:00Z" },
+        { "sender": "Charlie", "text": "Hello!", "timestamp": "2024-05-24T14:12:00Z" }
+      ]
+    },
+    {
+      "contactId": 4,
+      "messages": [
+        { "sender": "me", "text": "David, are you coming to the party?", "timestamp": "2024-05-24T15:00:00Z" },
+        { "sender": "David", "text": "Yes, I'll be there!", "timestamp": "2024-05-24T15:05:00Z" }
+      ]
+    },
+    {
+      "contactId": 5,
+      "messages": [
+        { "sender": "me", "text": "Eve, did you finish the report?", "timestamp": "2024-05-24T16:00:00Z" },
+        { "sender": "Eve", "text": "Not yet, still working on it.", "timestamp": "2024-05-24T16:10:00Z" }
+      ]
+    },
+    {
+      "contactId": 6,
+      "messages": [
+        { "sender": "me", "text": "Frank, how's the project going?", "timestamp": "2024-05-24T17:00:00Z" },
+        { "sender": "Frank", "text": "It's going well!", "timestamp": "2024-05-24T17:20:00Z" }
+      ]
+    },
+    {
+      "contactId": 7,
+      "messages": [
+        { "sender": "me", "text": "Grace, did you see the latest news?", "timestamp": "2024-05-24T18:00:00Z" },
+        { "sender": "Grace", "text": "Yes, it's quite surprising!", "timestamp": "2024-05-24T18:30:00Z" }
+      ]
+    },
+    {
+      "contactId": 8,
+      "messages": [
+        { "sender": "me", "text": "Hannah, are you available for a call?", "timestamp": "2024-05-24T19:00:00Z" },
+        { "sender": "Hannah", "text": "Sure, let's do it.", "timestamp": "2024-05-24T19:15:00Z" }
+      ]
+    }
+  ]
+}

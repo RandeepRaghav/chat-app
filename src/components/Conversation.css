@@ -1,0 +1,14 @@
+.conversation {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .conversation:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .conversation div:first-child {
+    font-weight: bold;
+  }
+  

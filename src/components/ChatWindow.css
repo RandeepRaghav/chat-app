@@ -1,0 +1,42 @@
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #e5ddd5;
+  }
+  
+  .chat-window ul {
+    list-style: none;
+    padding: 10px;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .chat-window li {
+    margin-bottom: 10px;
+  }
+  
+  .chat-window li b {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .chat-window input {
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .chat-window button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #25d366;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+  
