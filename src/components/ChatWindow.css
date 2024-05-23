@@ -9,22 +9,39 @@
     list-style: none;
     padding: 10px;
     flex: 1;
+    font-size: 20px;
     overflow-y: auto;
   }
   
   .chat-window li {
+    border: 1px solid #050505;
+    padding: 10px;
     margin-bottom: 10px;
+    background-color: beige;
+    
   }
   
   .chat-window li b {
+    
     display: block;
     margin-bottom: 5px;
+  }
+
+  .chat-window li i{
+    display: flex;
+    
+    justify-content: end;
+    
   }
   
   .chat-window input {
     padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
     border: none;
     border-top: 1px solid #ddd;
+    border-width: medium;
+    height: 70px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -32,11 +49,16 @@
   .chat-window button {
     padding: 10px 20px;
     border: none;
+    font-size: 20px;
     background-color: #25d366;
     color: white;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
-    align-self: flex-end;
+   
   }
   
+.chat-window div{
+    font-size: 30px;
+    font-weight: bold;
+}
